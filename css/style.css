@@ -21,6 +21,8 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    border: 2px solid #D9E2EC;
+    border-radius: 0.5rem
 }
 
 iframe {
