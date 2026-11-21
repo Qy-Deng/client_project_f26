@@ -638,13 +638,14 @@ footer p:last-child {
 }
 
 
-404page {
+
+.errorPage {
     max-width: 720px;
     margin: 0 auto 24px;
     text-align: center;
 }
 
-.error-code {
+.errorcode {
     font-size: 96px;
     font-weight: bold;
     line-height: 1;
@@ -652,7 +653,7 @@ footer p:last-child {
     margin-bottom: 16px;
 }
 
-.home-link {
+.homelink {
     display: inline-block;
     background-color: #00274C;
     color: #FFFFFF;
@@ -662,15 +663,15 @@ footer p:last-child {
     text-decoration: none;
 }
 
-.home-link:hover {
+.homelink:hover {
     background-color: #17426A;
 }
 
-.error-page h3 {
+.errorpage h3 {
     margin-top: 24px;
 }
 
-.error-links {
+.errorlinks {
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 0;
