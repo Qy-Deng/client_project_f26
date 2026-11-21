@@ -646,7 +646,7 @@ footer p:last-child {
 
 
 
-.errorPage {
+.errorpage {
     max-width: 720px;
     margin: 0 auto 24px;
     text-align: center;
@@ -684,6 +684,6 @@ footer p:last-child {
     margin-bottom: 0;
 }
 
-.error-links li {
+.errorlinks li {
     margin-bottom: 8px;
 }
