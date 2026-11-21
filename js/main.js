@@ -1,5 +1,2 @@
-const year = document.getElementById("year");
-
-if (year) {
-    year.textContent = new Date().getFullYear();
-}
+// Source using: https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
+document.getElementById("year").innerHTML = new Date().getFullYear();
