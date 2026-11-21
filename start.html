@@ -72,9 +72,56 @@
             width="500"
             >
         </section>
+         
+         <!-- Content taken & modified from ChatGPT with the prompt, "Provide me a checklist of task projects"
+        ChatGPT. (2026). ChatGPT ( GPT-6 Nov 20th version) [Large language model]. -->
+        <section class="checklist">
+            <h2>Project Checklist</h2>
+            <p>Use this checklist to keep track of what your team has completed.</p>
+
+            <form id="starting-checklist">
+                <fieldset>
+                    <legend>Before starting our project, we have:</legend>
+
+                    <div class="task-list">
+                        <div class="task-item">
+                            <input type="checkbox" id="task-1">
+                            <label for="task-1">Sent an introduction email to our partner</label>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task-2">
+                            <label for="task-2">Scheduled our first meeting with the partner</label>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task-3">
+                            <label for="task-3">Prepared and shared a meeting agenda</label>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task-4">
+                            <label for="task-4">Discussed team roles and responsibilities</label>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task-5">
+                            <label for="task-5">Reviewed and signed our team or partnership agreement</label>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task-6">
+                            <label for="task-6">Confirmed the project scope and deliverables with our partner</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="progress-area">
+                    <label for="kickoff-progress">Our Progress</label>
+                    <progress id="kickoff-progress" max="6" value="0">0 of 6</progress>
+                    <p id="progress-text" aria-live="polite">0 of 6 tasks completed</p>
+                </div>
+
+                <button type="button" id="reset-checklist" class="reset-btn">Reset Checklist</button>
+            </form>
+        </section>
 
         <section>
-        
         <!-- section 3 Featured Resources & Handouts -->
         <h2>Featured Resources &amp; Handouts</h2>
         <ul class="card-grid resource-grid">
