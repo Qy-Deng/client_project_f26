@@ -4,6 +4,7 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 // start.html checklist
 // source using: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
 // source using: https://developer.mozilla.org/en-US/docs/Web/API/HTMLProgressElement/value
+// source using: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 const checklist = document.getElementById("starting-checklist");
 
 if (checklist) {
