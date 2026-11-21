@@ -15,6 +15,10 @@ body {
     line-height: 1.6;
     color: #243447;
     background-color: #F5F7FA;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -163,6 +167,9 @@ main {
     padding: 1.5rem 1rem;
     max-width: 60rem;
     margin: 0 auto;
+
+    flex: 1;
+    width: 100%;
 }
 
 /* Heading Typography */
