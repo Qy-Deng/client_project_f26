@@ -6,17 +6,20 @@
     <title>Engaged Learning Resources | UMSI</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
     
 </head>
 <body>
 
     <header>
   <a href = "#main" class="skip-link">Skip to Main Content</a>
-        <img 
-          src="images/umsi-logo.jpg" 
-          alt="UMSI Logo" 
-          width="500"
-        >
+        <a href="index.html" class="brand">
+          <img src="images/umsi-logo.jpg" alt="" width="400" height="400">
+          <span class="brand-text">
+              <span class="brand-school">University of Michigan School of Information</span>
+              <span class="brand-office">Engaged Learning Office</span>
+          </span>
+      </a>
         <nav>
             <ul>
                 <li><a href="index.html" aria-current="page">Home</a></li>
@@ -29,28 +32,31 @@
 
     </header>
     <main id="main">
-    <section>
+    <section class="media-split">
+    <div class="media-text"> 
       <h2>Build Skills. Work with Partners. Have an Impact.</h2>
       <p>
        The UMSI Engaged Learning Office connects students with opportunities to apply classroom knowledge to real challenges. Use this site to prepare for your experience, manage your work, and reflect on what you learned.
       </p>
-
+    </div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/81ZO9RfIJEQ?si=tBp82YWZMl1u7CVS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
          <!-- Note: this iframe might cause an Axe ARIA error - that's not on you that's on YouTube! -->
     </section>
 
-<section>
-    <h2>Why Use This Resource?</h2>
-
-    <p>Real-world projects rarely follow a perfect plan. This site helps you find the right guidance when you need it, so you can spend less time searching for materials and more time learning, collaborating, and moving your project forward.
-    </p>
-        <img src="images/umsi-backpack-fall.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
-    <ul>
+<section class="media-split">
+    <div class="media-text"> 
+      <h2>Why Use This Resource?</h2>
+      <p>Real-world projects rarely follow a perfect plan. This site helps you find the right guidance when you need it, so you can spend less time searching for materials and more time learning, collaborating, and moving your project forward.
+      </p>
+      <ul>
         <li><strong>Follow a clear process:</strong> Move from preparation and project launch through active work, reflection, and responsible closeout.</li>
         <li><strong>Find practical support:</strong> Access relevant templates, checklists, examples, and how-to guidance for common project needs.</li>
         <li><strong>Build professional skills:</strong> Strengthen your communication, teamwork, project management, and ethical decision-making.</li>
         <li><strong>Turn experience into evidence:</strong> Identify what you learned and communicate your impact in resumes, portfolios, and interviews.</li>
-    </ul>
+      </ul>
+    </div>
+        <img src="images/umsi-backpack-fall.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+   
 </section>
 
  <section>
@@ -61,21 +67,21 @@
     <!-- class added -->
     <div class="card-grid">
     <article>
-      <h3>Start Here</h3>
-      <p>Set learning goals, understand the project context, examine your assumptions, define team roles, and establish a strong relationship with your partner.</p>
+      <h3>Prepare</h3>
+      <p>Set learning goals, understand the project context, examine your assumptions, and assess your team's readiness before the project begins.</p>
       <a href="prep.html">Prepare for your experience</a>
     </article>
 
     <article>
-      <h3>Navigate the Experience</h3>
-      <p>Manage projects and teams, conduct ethical research, communicate progress, respond to feedback, and work through unexpected challenges.</p>
-      <a href="resources.html">Find active project resources</a>
+      <h3>Start Your Project</h3>
+      <p>Reach out to your partner, run a productive kickoff meeting, and formalize team and scope agreements.</p>
+      <a href="start.html">Start your experience</a>
     </article>
 
     <article>
-      <h3>Wrap Up and Move Forward</h3>
-      <p>Complete a responsible handoff, evaluate your impact, reflect on your growth, and translate your work into resume, portfolio, and interview content.</p>
-      <a href="start.html">Plan your next steps</a>
+      <h3>Find Campus Support</h3>
+      <p>Connect with University partners and ELO workshops that build teamwork, partner engagement, and project management skills.</p>
+      <a href="resources.html">Explore campus partner resources</a>
     </article>
 
     </div>
@@ -118,19 +124,23 @@
     </article>
     </div>
    </section>
-  <section>
+
+  <div class="aboutrow">
+    <section>
     <h2>About the Engaged Learning Office</h2>
     <p>The Engaged Learning Office works with partners across industries and sectors, from technology companies to grassroots nonprofits and cultural heritage institutions, to provide project-based opportunities for UMSI students.</p>
     <p>Its mission is to facilitate transformational engaged learning experiences and enable innovative, sustainable, and mutually beneficial information solutions for local and global communities.</p>
-  </section>
-  <aside>
-    <h2>Stay Connected with ELO</h2>
-    <p>Get updates about ELO programs, workshops, events, and opportunities through the weekly newsletter.</p>
-    <div>
-       <a href="https://umsi.info/elo-newsletter"> Sign up for the ELO newsletter</a>
-    </div>
-    <p>Questions? Email <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>.</p>
-  </aside>
+    </section>
+    <aside>
+      <h2>Stay Connected with ELO</h2>
+      <p>Get updates about ELO programs, workshops, events, and opportunities through the weekly newsletter.</p>
+      <div>
+        <a href="https://umsi.info/elo-newsletter"> Sign up for the ELO newsletter</a>
+      </div>
+      <p>Questions? Email <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>.</p>
+    </aside>
+  </div>
+  
 
 
         <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
@@ -141,7 +151,7 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year">2026</span> Regents of the University of Michigan</p>
     </footer>
 </body>
 </html>

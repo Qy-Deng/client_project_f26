@@ -6,13 +6,20 @@
     <title>Campus Partner Resources | UMSI</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 
 </head>
 <body>
 
     <header>
         <a href = "#main" class="skip-link">Skip to Main Content</a>
-        <img src="images/umsi-logo.jpg" alt="UMSI Logo">
+        <a href="index.html" class="brand">
+            <img src="images/umsi-logo.jpg" alt="" width="400" height="400">
+            <span class="brand-text">
+                <span class="brand-school">University of Michigan School of Information</span>
+                <span class="brand-office">Engaged Learning Office</span>
+            </span>
+        </a>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -24,20 +31,20 @@
     <h1>Campus Partner Resources</h1>
     </header>
     <main id="main">
-        <section>
-        <!-- section 1  Intro to Campus Partner Resources-->
+        <section class="media-split">
+        <div class="media-text">
+            <!-- section 1  Intro to Campus Partner Resources-->
+            <h2>Find Support Across the University</h2>
 
-        <h2>Find Support Across the University</h2>
-
-        <p>
-            The Engaged Learning Office works with community partners from all industries and sectors, ranging from Fortune 500 tech companies to grassroots nonprofits and cultural heritage institutions, to provide project-based opportunities for students. 
-        </p>
-            
-        <p>
-            As a partner organization, you can engage with UMSI students to improve your information systems and increase your internal knowledge of novel information practices.
-        </p>
-
-
+            <p>
+                The Engaged Learning Office works with community partners from all industries and sectors, ranging from Fortune 500 tech companies to grassroots nonprofits and cultural heritage institutions, to provide project-based opportunities for students. 
+            </p>
+                
+            <p>
+                As a partner organization, you can engage with UMSI students to improve your information systems and increase your internal knowledge of novel information practices.
+            </p>
+        </div>
+        
         <img
             src="images/elo-engage-students.jpg"
             alt="Students making a blue painting"
@@ -107,7 +114,8 @@
             During the first month of the Fall and Winter terms, the ELO offers multiple workshop iterations focused on three core competency areas. Workshops are offered at introductory, intermediate, and advanced levels to match your course's student cohort.
         </p>
 
-        <article>
+        <div class="resourcegrid">
+            <article>
             <h3>Core Competency Areas</h3>
             <ul>
                 <li><strong>Teamwork &amp; Collaboration:</strong> Team establishment, roles and psychological safety, conflict mitigation, peer feedback, and team closeout.</li>
@@ -171,12 +179,14 @@
                 <li><strong>Pre-Semester Requests:</strong> Submit at least two weeks before the academic term begins.</li>
                 <li><strong>In-Semester Requests:</strong> Submit at least one month prior to your desired workshop date.</li>
             </ul>
-            <p><strong>Submit your request:</strong><a href="https://airtable.com/appCGRbPQmj0VViAc/pagdxz8bzgZ7OTNPC/form">ELO In-Class Workshop Request Form</a></p>
+            <p><strong>Submit your request:</strong> <a href="https://airtable.com/appCGRbPQmj0VViAc/pagdxz8bzgZ7OTNPC/form">ELO In-Class Workshop Request Form</a></p>
             <p>
                 Questions about workshop content or custom tailoring? Contact Alissa Talley-Pixley, Senior Associate Director of Student Engagement, at
                 <a href="mailto:alissat@umich.edu">alissat@umich.edu</a>.
             </p>
         </article>
+        </div>
+        
         </section>
 
 
@@ -189,7 +199,7 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year">2026</span> Regents of the University of Michigan</p>
     </footer>
 </body>
 </html>

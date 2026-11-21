@@ -6,13 +6,20 @@
     <title>Starting Your Experience | UMSI</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 
 </head>
 <body>
 
     <header>
         <a href = "#main" class="skip-link">Skip to Main Content</a>
-        <img src="images/umsi-logo.jpg" alt="UMSI Logo">
+        <a href="index.html" class="brand">
+            <img src="images/umsi-logo.jpg" alt="" width="400" height="400">
+            <span class="brand-text">
+                <span class="brand-school">University of Michigan School of Information</span>
+                <span class="brand-office">Engaged Learning Office</span>
+            </span>
+        </a>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -26,13 +33,13 @@
     </header>
     <main id="main">
 
-        <section>
-            <h2>Introduction to ELO office</h2>
-            <p>
-            A brief introduction to the Engaged Learning Office and the programs available to students
-
-            </p>
-
+        <section class="media-split">
+            <div class="media-text"> 
+                <h2>Introduction to the ELO</h2>
+                <p>
+                A brief introduction to the Engaged Learning Office and the programs available to students
+                </p>
+            </div>
             <iframe 
                 width="560" height="315" 
                 src="https://www.youtube.com/embed/PJUbWkHccgg"
@@ -41,7 +48,7 @@
             </iframe>
                 <!-- Note: this iframe might cause an Axe ARIA error - that's not on you that's on YouTube! -->
         </section>
-        <section>
+        <section class="startcontent">
         <!-- section 1 Value & Narrative -->
         <h2> Value &amp; Narrative</h2>
         <p>
@@ -49,19 +56,21 @@
         </p>
         </section>
 
-        <section>
-        <!-- section 2 Focus & Objectives -->
-        <h2> Focus &amp; Objectives </h2>
+        <section class="media-split">
+            <div class="media-text"> 
+                <!-- section 2 Focus & Objectives -->
+                <h2> Focus &amp; Objectives </h2>
+                <ul>
+                    <li><strong>Partner Communication:</strong> Draft clear, professional outreach to launch working relationships.</li>
+                    <li><strong>First Meetings:</strong> Structure productive kickoff meetings that define roles and project bounds.</li>
+                    <li><strong>Formalizing Agreements:</strong> Document team commitments and scope agreements shared by all stakeholders.</li>
+                </ul>
+            </div>
         <img 
             src="images/student-biking.jpg" 
             alt="A student rides a bike on the road"
             width="500"
             >
-        <ul>
-            <li><strong>Partner Communication:</strong> Draft clear, professional outreach to launch working relationships.</li>
-            <li><strong>First Meetings:</strong> Structure productive kickoff meetings that define roles and project bounds.</li>
-            <li><strong>Formalizing Agreements:</strong> Document team commitments and scope agreements shared by all stakeholders.</li>
-        </ul>
         </section>
 
         <section>
@@ -108,7 +117,7 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year">2026</span> Regents of the University of Michigan</p> 
     </footer>
 </body>
 </html>

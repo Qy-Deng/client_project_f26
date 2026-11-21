@@ -56,20 +56,51 @@ iframe {
 header {
     background-color: #00274C;
     color: #FFFFFF;
-    text-align: center;
-    /* change from 1.5rem to 1.25rem */
-    padding: 1.25rem 1rem;
+    text-align: left;
+    padding: 1rem;
 }
 
-/* Smaller the logo*/
-header img {
-    width: auto;
-    max-width: 8.5rem;
-    margin: 0 auto 0.75rem;
-    padding: 0.25rem;
-    background-color: #FFFFFF;
-    border: none;
+/* Brand: logo + office name */
+.brand {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    align-items: center;
+    gap: 0.75rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
     border-radius: 0.25rem;
+}
+
+.brand-school,
+.brand-office {
+    display: block;
+    line-height: 1.25;
+}
+
+.brand-school {
+    font-size: 0.8rem;
+}
+
+.brand-office {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.brand:hover .brand-office {
+    text-decoration: underline;
+}
+
+.brand:focus-visible {
+    outline: 3px solid #FFCB05;
+    outline-offset: 4px;
 }
 
 /* Page title */
@@ -338,4 +369,175 @@ footer a:focus-visible {
 
 footer p:last-child {
     font-size: 0.875rem;
+}
+
+
+
+/* Media Split Layout */
+.media-split {
+    display: grid;
+    gap: 1rem;
+}
+
+.media-text > :last-child {
+    margin-bottom: 0;
+}
+
+/* Large View Layout */
+@media (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        align-items: center;
+        gap: 16px;
+        padding: 20px 32px;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+        font-size: 32px;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 8px;
+        margin: 0;
+    }
+
+    nav a {
+        background-color: transparent;
+        color: #FFFFFF;
+        border-radius: 0;
+        border-bottom: 3px solid transparent;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        background-color: #17426A;
+        color: #FFFFFF;
+    }
+
+    nav a[aria-current="page"] {
+        background-color: transparent;
+        color: #FFCB05;
+        text-decoration: none;
+        border-bottom: 3px solid #FFCB05;
+    }
+
+    main {
+        padding: 32px;
+    }
+
+    main section,
+    main aside {
+        padding: 28px;
+    }
+
+    .media-split {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .media-split img {
+        width: 100%;
+        height: auto;
+    }
+
+    .media-split-reverse img {
+        order: -1;
+    }
+
+    .card-grid-2 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .card-grid-2 h3 {
+        font-size: 18px;
+    }
+}
+
+/* XL View Layout */
+@media (min-width: 1024px) {
+
+    /* --- Header --- */
+    header {
+        grid-template-columns: auto 1fr;
+        column-gap: 32px;
+        padding: 20px 48px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-top: 24px;
+    }
+
+    nav ul {
+        grid-template-columns: auto auto auto auto;
+        justify-content: end;
+    }
+
+    nav a {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+    /* For wider screens */
+    main {
+        max-width: 1140px;
+    }
+
+    footer {
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: center;
+        column-gap: 32px;
+        text-align: left;
+        padding: 20px 48px;
+    }
+
+
+    /* index.html */
+    .aboutrow {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 24px;
+        align-items: start;
+    }
+
+    /* prep.html */
+    .card-grid-prep {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .card-grid-prep > article:last-child {
+        grid-column: 1 / -1;
+    }
+
+    /* start.html */
+    .startcontent {
+        border-left: 8px solid #FFCB05;
+    }
+
+    .startcontent p {
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    /* resources.html */
+    .resourcegrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .resourcegrid article {
+        background-color: #F5F7FA;
+        border: 1px solid #D9E2EC;
+        border-top: 4px solid #00274C;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    
 }

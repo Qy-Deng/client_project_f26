@@ -6,13 +6,20 @@
     <title>Preparing for Your Experience | UMSI</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
     <header>
 
   <a href = "#main" class="skip-link">Skip to Main Content</a>
-        <img src="images/umsi-logo.jpg" alt="UMSI Logo">
+        <a href="index.html" class="brand">
+          <img src="images/umsi-logo.jpg" alt="" width="400" height="400">
+          <span class="brand-text">
+              <span class="brand-school">University of Michigan School of Information</span>
+              <span class="brand-office">Engaged Learning Office</span>
+          </span>
+      </a>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -25,21 +32,24 @@
   </header>
 <main id="main">
   
-<section>
-  <h2>Launch Your Engaged Learning Journey</h2>
-  <p>Transform your academic knowledge into real-world impact. Use this guide to understand your project context, evaluate team readiness, establish expectations, and begin a productive partnership.</p>
+<section class="media-split">
+    <div class="media-text"> 
+      <h2>Launch Your Engaged Learning Journey</h2>
+     <p>Transform your academic knowledge into real-world impact. Use this guide to understand your project context, evaluate team readiness, establish expectations, and begin a productive partnership.</p>
+    </div>
   <img
     src="images/students-classroom.jpg"
     alt="Students attending a presentation in a university classroom"
     width="500"
   >
-
 </section>
 
-<section>
-  <h2>Why the Work Starts Before the Project</h2>
-  <p>Engaged learning at UMSI is fundamentally different from traditional classroom assignments. You are stepping out of controlled environments and into complex, unscripted ecosystems where technical solutions intersect with human lives, organizational cultures, and real community needs.</p>
-  <p>The initial phase of a project is rarely about jumping straight into execution—it is about building the foundation for ethical, sustainable engagement. Taking time to reflect on your own positionality, audit your team’s collective skills, and listen deeply to your partner’s goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
+<section class="media-split media-split-reverse" >
+    <div class="media-text"> 
+      <h2>Why the Work Starts Before the Project</h2>
+      <p>Engaged learning at UMSI is fundamentally different from traditional classroom assignments. You are stepping out of controlled environments and into complex, unscripted ecosystems where technical solutions intersect with human lives, organizational cultures, and real community needs.</p>
+      <p>The initial phase of a project is rarely about jumping straight into execution—it is about building the foundation for ethical, sustainable engagement. Taking time to reflect on your own positionality, audit your team’s collective skills, and listen deeply to your partner’s goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
+    </div>
   <img
     src="images/umsi-orientation.jpg"
     alt="UMSI students participating in an orientation event, raising their hands and applauding"
@@ -53,7 +63,7 @@
   <h2>Preparing for the Experience</h2>
   <p>Before creating a solution, take time to understand the context, evaluate your team's readiness, and identify what you still need to learn.</p>
 
-  <div class="card-grid">
+  <div class="card-grid card-grid-prep">
     <article>
     <h3>Approach the Work as a Collaborative Learner</h3>
     <p>Before writing code, sketching wireframes, or analyzing data, consider how your identity and previous experiences influence the way you understand the project.</p>
@@ -156,7 +166,7 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year">2026</span> Regents of the University of Michigan</p>
     </footer>
     
 </body>
